@@ -31,7 +31,8 @@ type Options struct {
 
 func NewOptions(base string) *Options {
 	return &Options{
-		Base:          base,
-		CompactArrays: true,
+		Base:           base,
+		CompactArrays:  true,
+		DocumentLoader: NewDocumentLoader(),
 	}
 }
